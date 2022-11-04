@@ -7,11 +7,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link {{ $title === "spiderman" ? "active" : "" }}" href="/">Spiderman</a>
+            <a class="nav-link {{ $title === "movie" ? "active" : "" }}" href="/">Movie</a>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a class="nav-link {{ $title === "pinocchio" ? "active" : "" }}" href="/pinocchio">Pinocchio</a>
-          </li>
+          </li> --}}
         </ul>
         <ul class="navbar-nav ms-auto">
             <a href="/login" class="nav-link"><i class="bi bi-box-arrow-in-right"></i> Log in</a>

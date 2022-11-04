@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('spiderman',[
-        'title' => "spiderman"
-    ]);
-});
+Route::get('/', [MovieController::class,'index']);
 
-Route::get('/pinocchio', function () {
-    return view('pinocchio',[
-        'title' => "pinocchio"
-    ]);
-});
+// Route::get('/pinocchio', function () {
+//     return view('pinocchio',[
+//         'title' => "pinocchio"
+//     ]);
+// });
